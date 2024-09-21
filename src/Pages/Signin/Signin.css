@@ -1,0 +1,132 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.left-side {
+    width: 50%;
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+
+.left-side .logo img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 0px;
+}
+
+.left-side h1 {
+    text-align: center;
+    margin: 0px 0px;
+    color: #ff0000;
+}
+
+.left-side .background-image {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.right-side {
+    width: 50%;
+    background-color: #f8f8f8;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.right-side h1 {
+    text-align: center;
+    margin-bottom: 70px;
+    color: #ff0000;
+    font-size: 100px;
+}
+
+.right-side form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.right-side label {
+    display: block;
+    margin-bottom: 5px;
+    color: #010101;
+}
+
+.right-side input[type="email"],
+.right-side input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+.right-side button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.right-side button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+.right-side p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.right-side .signup-link {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side {
+        display: none;
+    }
+
+    .right-side {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
